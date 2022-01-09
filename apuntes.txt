@@ -1,0 +1,8 @@
+Para ver mi cdn de font awesome: 
+
+    1.ir a fontawesome
+
+    2.modifica la url original agrega al final de /account/cdn
+      ejemplo : https://fontawesome.com/account/cdn
+
+Solamente quedaria pegar en la cabecera del documento html      

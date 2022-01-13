@@ -18,7 +18,7 @@ body{
 
 .wrapper {
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #191c32;
     color: #fff;
@@ -118,7 +118,9 @@ main {
     height: 80vh;
     grid-area: main;
     display: flex;
+    justify-content: center;
     align-items: center;
+   
     
 
 }
@@ -163,15 +165,11 @@ main img{
     
     
     
+    
 
 }
 
-.about{
 
-    grid-area: about;
-    background-color: white;
-
-}
 
 .info-content{
 
@@ -181,17 +179,55 @@ main img{
 }
 
 
-.about{color: black;}
+
+.about{
+    
+    width: 100%;
+    grid-area: about;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
 .about img{
 
-    background-color: yellowgreen;
+    width: 50%;
+
+}
+
+.about-info{
+
+    padding: 3em;
+
+}
+
+.about-info h2 {
+
+    font-size: 2em;
+    color: #191c32;
+}
+
+.divider{/*creo que esto se puede hacer con un pseudoelementos*/
+
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2.5em;
 
 }
 
 .about p{
 
-    background-color: cadetblue;
+    margin-bottom: 1em;
+
 }
+
+
+
+
 
 
 

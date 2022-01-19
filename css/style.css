@@ -41,7 +41,8 @@ body{
     " main      main "
     " about     about "
     " portfolio portfolio"
-    " contact   contact";
+    " contact   contact"
+    " footer    footer";
 
 }
 
@@ -130,6 +131,7 @@ main {
 h1{
 
     font-size: 3em;
+    margin-bottom: .5em;
    
 
 }
@@ -177,6 +179,12 @@ main img{
 
    
     width: 50%;
+
+}
+
+.description{
+
+    width: 80%;
 
 }
 
@@ -343,7 +351,21 @@ main img{
     background-color: #191c32;
     color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.contact-section:nth-child(2){
+
+
+    align-self: center;
+
+}
+
+.contact-headings{
+
+    padding: 5em;
 
 }
 
@@ -411,6 +433,48 @@ main img{
     box-shadow: none;
 
 }
+
+.footer{
+
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    color: black;
+
+}
+
+.footer-content h2{
+
+    font-size: 3em;
+
+
+}
+
+.footer-content h5,
+.social-network i{
+
+    font-size: 1.5em;
+    
+
+}
+
+.social-network{
+
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+    
+
+}
+
+
 
 
 

@@ -6,13 +6,21 @@
     box-sizing: border-box;
 
 }
+html{
+
+    font-size: 16px;
+
+
+}
 
 body{
 
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
     
     
-   
+    
 
 }
 
@@ -21,8 +29,6 @@ body{
     width: 100%;
     height: 100vh;
     background-color: #191c32;
-    color: #fff;
-
     /*Cambio a grid*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -473,6 +479,248 @@ main img{
     
 
 }
+
+
+/*Responsive*/
+@media  screen and (max-width: 1024px) {
+    
+    body{
+        width: 100vw;
+    }    
+
+    .wrapper{
+
+        width: 100vw;
+        height: auto;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "header"
+        "main"
+        "about"
+        "portfolio"
+        "contact"
+        "footer";
+
+
+    }
+
+    .order-1 { order:1;}
+    .order-2 { order:2;}
+    .order-3 { order:3;}
+
+    .header{
+
+        
+        grid-area: header;
+       
+        
+        
+    }
+
+   .about{
+
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   .about img{
+
+        width: 100%;
+
+   }
+
+   .portfolio{
+
+    grid-area: portfolio;
+
+   }
+
+   .contact{
+
+    grid-area: contact;
+
+   }
+
+   .footer{
+
+
+    grid-area: footer;
+
+   }
+
+    
+    .navbar {
+    
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+    }
+
+
+    main .info-picture{
+
+        width: 180px;
+        height: 180px;
+        
+
+    }
+
+
+    main figure{
+
+        width: 100%; 
+        height: 100%;
+    }
+    
+
+    main img{
+
+        border-radius: 50%;
+        max-width: 100%; 
+        width: 100%; 
+        height: auto;
+        box-shadow: aqua 0px 1px 4px, aqua 0px 0px 0px 3px;
+
+    }
+
+
+    .navbar{
+
+
+        padding: 1.5rem 1rem;
+
+    }
+
+    .menu{
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        
+        
+       
+    }
+
+    .menu a {
+
+        
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+
+    main{
+
+        grid-area: main;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        
+    }
+
+    .info-picture{
+
+        margin-bottom: 1.5rem;
+
+    }
+
+    main .info-content{
+    
+        width: 100%;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    main h1{
+
+        font-size: 1.5rem;
+
+    }
+
+    main .description{
+
+        width: 100%;
+        font-size: 1rem;
+
+    }
+
+    main a{
+
+        align-self: center;
+
+    }
+
+    .download-cv{
+
+        padding: .8rem 3rem;
+
+    }
+
+    .about{
+
+        grid-area: about;
+
+    }
+    
+    .about-info h2 {
+
+        font-size: 1.5rem;
+        color: #191c32;
+    }
+
+    .about-info{
+
+        padding: 1rem;
+        font-size: 1rem;
+    
+    }
+
+    .portfolio{
+
+        grid-area: portfolio;
+
+    }
+
+    .portfolio .container{
+
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-section{
+
+        grid-area: contact;
+
+    }
+
+    .footer{
+
+        grid-area: footer;
+
+    }
+
+
+}
+
+
+
 
 
 

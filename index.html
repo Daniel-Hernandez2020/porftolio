@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalabe=no">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -34,7 +35,7 @@
 
         <main>
 
-            <div class="info-content">
+            <div class="info-content order-2">
                 <h1><span>Daniel </span>Hernandez</h1>
                 <p class="description">Desarrollador Frontend en proceso, aprendo constantemente y de forma autodidacta
                     , este es mi portafolio, tengo algunos trabajos, y pronto estare desarrollando mas
@@ -46,10 +47,12 @@
                 </a>
             </div>
     
-            <div class="info-picture">
-
-                <img src="./img/picture.png" alt="Juan Daniel picture">
-
+            <div class="info-picture order-1">
+                <figure>
+                    <img srcset="./img/picture.png,
+                    ./img/profile3_res.png 2x
+                    " alt="Juan Daniel picture">
+                </figure>
             </div>
     
        </main>

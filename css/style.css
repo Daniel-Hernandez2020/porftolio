@@ -669,9 +669,9 @@ main img{
 
     .about .about-picture{
 
-        width: 180px;
-        height: 180px;
-        background-color: aqua;
+        width: 100%;
+        height: auto;
+        
         
 
     }
@@ -813,20 +813,14 @@ main img{
     .contact-section{
 
         grid-area: contact;
-
-    }
-
-    .contact-section{
-
-
-        grid-area: contact;
+        width: 100%;
         background-color: #191c32;
         color: #fff;
         display: flex;
         flex-direction: column;
-        
-    
+
     }
+
     
     .contact-section:nth-child(2){
     
@@ -850,7 +844,7 @@ main img{
     
     .container-contact{
     
-        padding: 3em;
+       padding: 0;
         margin: 0 auto;
         
     }
@@ -859,7 +853,7 @@ main img{
     
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 100%;
         margin-top: 2em;
     
     
@@ -935,7 +929,7 @@ main img{
     
         display: flex;
         justify-content: space-evenly;
-        width: 80vw;
+        width: 100%;
         margin-top: 1rem;
         
     
